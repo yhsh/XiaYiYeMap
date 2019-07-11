@@ -87,7 +87,7 @@
 
         <meta-data
             android:name="com.cld.lbsapi.API_KEY"
-            android:value="" />
+            android:value="填写你自己通过我的APP包名在百度地图申请到的appkey" />
 
     </application>
 
