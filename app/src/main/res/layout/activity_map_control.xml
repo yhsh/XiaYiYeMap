@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <Button
+            android:id="@+id/btn_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="旋转"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edt_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_overlook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="俯视"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edt_overlook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_bound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:text="获取屏幕坐标范围"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_bound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dip"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000"
+            android:textColor="#aacc0000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.cld.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

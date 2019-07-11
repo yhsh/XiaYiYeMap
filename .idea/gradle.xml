@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CustomerLayout" />
+            <option value="$PROJECT_DIR$/Custorm自定义时钟" />
+            <option value="$PROJECT_DIR$/ForceOff-line(强制下线)" />
+            <option value="$PROJECT_DIR$/GotSMSCode(自动获取验证码)" />
+            <option value="$PROJECT_DIR$/ListViewSwipeLayout" />
+            <option value="$PROJECT_DIR$/NetWorkChange" />
+            <option value="$PROJECT_DIR$/PerfectSimple" />
+            <option value="$PROJECT_DIR$/PermissionTools" />
+            <option value="$PROJECT_DIR$/PermissionsApply" />
+            <option value="$PROJECT_DIR$/PermissionsDemo" />
+            <option value="$PROJECT_DIR$/QQDelete(滑动删除)" />
+            <option value="$PROJECT_DIR$/SQliteTest" />
+            <option value="$PROJECT_DIR$/SaveFile" />
+            <option value="$PROJECT_DIR$/WebViewPDFFromJS" />
+            <option value="$PROJECT_DIR$/XmlKaTu" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

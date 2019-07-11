@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_end_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="输入比例尺缩放级别"
+            android:numeric="decimal"
+            android:text="3"
+            android:textSize="12sp" />
+        
+        <Button
+            android:id="@+id/btn_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置指定比例尺"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip" >
+        <Button
+            android:id="@+id/btn_maxzoomlevel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:layout_weight="1"
+            android:text="最大比例尺级别"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/btn_minzoomlevel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="最小比例尺级别"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip" >
+		<Button
+            android:id="@+id/btn_getlevel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+			android:layout_weight="2"
+            android:gravity="center"
+            android:text="获取当前比例尺级别"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/btn_zoomout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+			android:layout_weight="1"
+            android:text="放大"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/btn_zoomin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+			android:layout_weight="1"
+            android:text="缩小"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tv_result"
+		android:layout_marginLeft="10dp"
+		android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.cld.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

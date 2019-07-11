@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_start_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="第一个点:" />
+
+            <EditText
+                android:id="@+id/et_start_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="经度"
+                android:numeric="decimal"
+                android:text="114.1158056"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_start_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="纬度"
+                android:numeric="decimal"
+                android:text="22.60075"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="第二个点:" />
+
+            <EditText
+                android:id="@+id/et_end_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="经度"
+                android:numeric="decimal"
+                android:text="114.152194"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_end_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="纬度"
+                android:numeric="decimal"
+                android:text="22.608361"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/ll_node"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <Button
+            android:id="@+id/btn_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="两点之间测距"
+            android:textSize="14sp" />
+        <TextView 
+            android:id="@+id/tv_result"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

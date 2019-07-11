@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="100dp"
+    android:shape="ring"
+    android:thickness="10dp"
+    android:useLevel="false">
+    <stroke
+        android:width="10dp"
+        android:color="#ff6652" />
+    <!--这里可以看出shape中的android:thickness属性和stoke中的android:width属性的作用，
+    android:thickness是圆环的宽度，而android:width是圆环边缘线的宽度。如果设置成一样，
+    就会如图1所示，但这个一般不符合UI需求，会发现圆环宽度比较大，其实是android:thickness的2倍。
+    这里其实不该用stoke，该用solid指定填充色就OK了。
+    而想要图二效果的注意android:width一定要比android:thickness小。-->
+</shape>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_map_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiogroup_2dnorth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2D地图正北" />
+         <RadioButton
+            android:id="@+id/radiogroup_2dfllow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2D图随车转" />
+        <RadioButton
+            android:id="@+id/radiogroup_3dnorth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3D地图正北" />
+        <RadioButton
+            android:id="@+id/radiogroup_3dfllow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3D图随车转" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rg_display_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiogroup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="白天" />
+         <RadioButton
+            android:id="@+id/radiogroup_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="黑夜" />
+        <RadioButton
+            android:id="@+id/radiogroup_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="白天黑夜自动切换" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <CheckBox
+            android:id="@+id/cb_scaleControl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="比例尺"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_zoomControl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="缩放控件"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_gesture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="禁用手势"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_traffic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="路况开关"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_end_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/et_angle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="输入俯视角度"
+            android:numeric="decimal"
+            android:text="0"
+            android:textSize="12sp" />
+        
+        <Button
+            android:id="@+id/btn_setangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置俯视角度"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/btn_getangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="获取俯视角度"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.cld.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

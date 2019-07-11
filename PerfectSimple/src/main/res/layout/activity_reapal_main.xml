@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+
+
+    <!-- 商品名 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="商品名"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此添加商品名"
+            android:text="春风十里"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 描述 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="商品描述"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_body"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此添加商品描述"
+            android:text="不如你"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 金额 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_fee_total"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="应付金额"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:maxLength="9"
+            android:id="@+id/et_total_fee"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此输入金额(分)"
+            android:inputType="numberDecimal"
+            android:text="1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 会员号 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_member_id"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="融宝会员号"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_member_id"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此输入会员号"
+            android:text="200100000001361"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_merchant_id"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="商户号"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_merchant_id"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此输入商户号"
+            android:text="100000000000147"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_un_credit_code"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="店铺信用码"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_un_credit_code"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此输入店铺信用码"
+            android:text="91110105MA00BYDC04"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_formal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tv_formal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勾选状态:正式环境  | 未勾选状态:联调环境"
+            android:textColor="#666"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!--  <Button
+         android:id="@+id/bt_reapal_pay"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:background="#5EC6F6"
+         android:text="通过融宝支付(1486商户号)"
+         android:textSize="15sp" />
+     <Button
+         android:id="@+id/bt_reapal_pay0"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:background="#5EC6F6"
+         android:text="通过融宝支付(71531商户号)"
+         android:textSize="15sp" />
+
+     <Button
+         android:id="@+id/bt_reapal_pay1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:background="#5EC6F6"
+         android:text="通过融宝支付(9085商户号)"
+         android:textSize="15sp" /> -->
+    <Button
+        android:id="@+id/bt_reapal_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#5EC6F6"
+        android:text="通过融宝支付"
+        android:textSize="15sp" />
+
+    <!--  <Button
+         android:onClick="test"
+        android:id="@+id/bt_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#5EC6F6"
+        android:text="测试成功界面"
+        android:textSize="15sp" /> -->
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+</LinearLayout>

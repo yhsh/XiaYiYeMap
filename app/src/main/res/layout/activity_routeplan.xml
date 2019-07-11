@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/tv_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step1:（纬度，经度）"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_start_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="起点：" />
+
+            <EditText
+                android:id="@+id/et_start_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入起点经度"
+                android:numeric="decimal"
+                android:text="114.1158056"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_start_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入起点纬度"
+                android:numeric="decimal"
+                android:text="22.60075"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="终点：" />
+
+            <EditText
+                android:id="@+id/et_end_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入终点经度"
+                android:numeric="decimal"
+                android:text="114.152194"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_end_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入终点纬度"
+                android:numeric="decimal"
+                android:text="22.608361"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_calc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/ll_node"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <!--
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step2:"
+            android:textSize="16sp" />
+        -->
+
+        <Button
+            android:id="@+id/btn_online_calc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="线路规划"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_simulate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="模拟导航"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_real"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="真实导航"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_hud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hud导航"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="详情"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_trafficlight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ll_calc_btn" />
+
+    <FrameLayout
+        android:id="@+id/mapview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_trafficlight" >
+    </FrameLayout>
+
+</RelativeLayout>

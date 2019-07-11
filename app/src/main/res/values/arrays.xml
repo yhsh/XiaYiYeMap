@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_axle">
+        <item>2轴</item>
+        <item>3轴</item>
+        <item>4轴</item>
+        <item>5轴</item>
+        <item>6轴及以上</item>
+    </string-array>
+    <string-array name="spinner_type">
+        <item>微型车辆</item>
+        <item>轻型车辆</item>
+        <item>中型车辆</item>
+        <item>重型车辆</item>
+    </string-array>
+    <string-array name="spinner_weight_flag">
+        <item>重量不参与计算不提醒</item>
+        <item>重量不参与计算提醒</item>
+        <item>重量参与计算</item>
+    </string-array>
+</resources>

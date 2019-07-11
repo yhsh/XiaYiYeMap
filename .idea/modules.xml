@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CustomerLayout/CustomerLayout.iml" filepath="$PROJECT_DIR$/CustomerLayout/CustomerLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Custorm自定义时钟/Custorm自定义时钟.iml" filepath="$PROJECT_DIR$/Custorm自定义时钟/Custorm自定义时钟.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForceOff-line(强制下线)/ForceOff-line(强制下线).iml" filepath="$PROJECT_DIR$/ForceOff-line(强制下线)/ForceOff-line(强制下线).iml" />
+      <module fileurl="file://$PROJECT_DIR$/GotSMSCode(自动获取验证码)/GotSMSCode(自动获取验证码).iml" filepath="$PROJECT_DIR$/GotSMSCode(自动获取验证码)/GotSMSCode(自动获取验证码).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListViewSwipeLayout/ListViewSwipeLayout.iml" filepath="$PROJECT_DIR$/ListViewSwipeLayout/ListViewSwipeLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetWorkChange/NetWorkChange.iml" filepath="$PROJECT_DIR$/NetWorkChange/NetWorkChange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PerfectSimple/PerfectSimple.iml" filepath="$PROJECT_DIR$/PerfectSimple/PerfectSimple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PermissionTools/PermissionTools.iml" filepath="$PROJECT_DIR$/PermissionTools/PermissionTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PermissionsApply/PermissionsApply.iml" filepath="$PROJECT_DIR$/PermissionsApply/PermissionsApply.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PermissionsDemo/PermissionsDemo.iml" filepath="$PROJECT_DIR$/PermissionsDemo/PermissionsDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QQDelete(滑动删除)/QQDelete(滑动删除).iml" filepath="$PROJECT_DIR$/QQDelete(滑动删除)/QQDelete(滑动删除).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQliteTest/SQliteTest.iml" filepath="$PROJECT_DIR$/SQliteTest/SQliteTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SaveFile/SaveFile.iml" filepath="$PROJECT_DIR$/SaveFile/SaveFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebViewPDFFromJS/WebViewPDFFromJS.iml" filepath="$PROJECT_DIR$/WebViewPDFFromJS/WebViewPDFFromJS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XiaYiYeMap.iml" filepath="$PROJECT_DIR$/XiaYiYeMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XmlKaTu/XmlKaTu.iml" filepath="$PROJECT_DIR$/XmlKaTu/XmlKaTu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

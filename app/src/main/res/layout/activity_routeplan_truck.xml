@@ -1,0 +1,255 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/tv_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step1:（纬度，经度）"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_start_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="起点：" />
+
+            <EditText
+                android:id="@+id/et_start_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入起点经度"
+                android:numeric="decimal"
+                android:text="114.1158056"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_start_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入起点纬度"
+                android:numeric="decimal"
+                android:text="22.60075"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="终点：" />
+
+            <EditText
+                android:id="@+id/et_end_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入终点经度"
+                android:numeric="decimal"
+                android:text="114.152194"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_end_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="输入终点纬度"
+                android:numeric="decimal"
+                android:text="22.608361"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_calc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/ll_node"
+        android:orientation="horizontal"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step2:"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_online_calc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="线路规划"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_simulate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="模拟导航"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_real"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="真实导航"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="详情"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_calc_btn"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_set_param"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宽:(米)"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_set_width"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:numeric="decimal"
+                android:text="2.8"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高:(米)"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_set_height"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:numeric="decimal"
+                android:text="4.2"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重:(吨)"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_set_weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:numeric="decimal"
+                android:text="13.5"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_ignore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_set_param"
+            android:orientation="horizontal"
+            android:paddingLeft="12sp" >
+
+            <Spinner
+                android:id="@+id/spinner_weight_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_weight_flag" />
+            
+            <CheckBox
+                android:id="@+id/cb_limit_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="忽略限行"
+                android:textSize="12sp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_car_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_set_ignore"
+            android:orientation="horizontal"
+            android:paddingLeft="12sp" >
+
+            <Spinner
+                android:id="@+id/spinner_axle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_axle" />
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_type" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mapview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_set_param" >
+    </FrameLayout>
+
+</RelativeLayout>

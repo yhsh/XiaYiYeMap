@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">下一页地图</string>
+    <string name="title_base_map_operation_demo">1. 基础地图(BaseMapDemo)</string>
+    <string name="title_base_search_demo">2. 检索功能(SearchDemo)</string>
+    <string name="title_base_navi_demo">3. 导航功能(NaviDemo)</string>
+    <string name="title_base_location_demo">4. 定位功能(LocationDemo)</string>
+    <string name="title_EngineeringMode">5. 工程模式(EngineeringMode)</string>
+    <string name="title_basemap_demo">1.基础地图(BaseMapDemo)</string>
+    <string name="title_open_cldmap_demo">2.调起导航(OpenCldMapDemo)</string>
+    <string name="title_layers_demo">3.图层控件展示(LayersDemo)</string>
+    <string name="title_overlay_demo">4.地图覆盖物展示(OverlayDemo)</string>
+    <string name="title_measurement_demo">5.测距(MeasurementDemo)</string>
+    <string name="title_mapcenter_demo">6.设置地图中心点(MapCenterDemo)</string>
+    <string name="title_scale_demo">7.地图比例尺控制(ScaleDemo)</string>
+    <string name="title_control_demo">8.地图操作(MapControlDemo)</string>
+    <string name="title_offline_demo">9.离线地图(OffLineDemo)</string>
+    <string name="title_route_guide_demo">1. GPS导航(RouteGuideDemo)</string>
+    <string name="title_route_plan_demo">2. 驾车路线规划(RoutePlanDemo)</string>
+    <string name="title_truck_route_plan_demo">3. 货运路线规划(TruckRoutePlanDemo)</string>
+    <string name="title_walk_route_plan_demo">4. 步行路线规划(WalkRoutePlanDemo)</string>
+    <string name="title_location_demo">5. 定位界面(LocationDemo)</string>
+    <string name="hini_city_name">请输入城市名称</string>
+    <string name="hini_keyword">请输入检索关键字</string>
+    <string name="search">检索</string>
+    <string name="search_no_data">没有检索到数据</string>
+    <string name="search_pre">上一页</string>
+    <string name="search_next">下一页</string>
+    <string name="add">添加</string>
+    <string name="add_hint">请添加最少2个凯立德坐标点</string>
+    <string name="y_hint">请输入凯立德经度</string>
+    <string name="x_hint">请输入凯立德纬度</string>
+    <string name="delete">删除</string>
+    <string name="search_city">城市检索</string>
+    <string name="search_bound">范围检索</string>
+    <string name="search_journey">沿途检索</string>
+    <string name="search_nearby">附近检索</string>
+    <string name="search_suggestion">联想检索</string>
+    <string name="search_geocode">地理编码</string>
+    <string name="search_rgeocode">逆地理编码</string>
+    <string name="search_district">行政区域范围检索</string>
+    <string name="search_busline">公交路线检索</string>
+    <string name="search_busstation">公交站台检索</string>
+    <string name="search_busplan">公交换乘</string>
+    <string name="search_busplan_segpath">公交换乘路段</string>
+    <string name="hini_city">城市</string>
+    <string name="hini_address">地址</string>
+    <string name="open_map">地图中打开</string>
+
+    <string name="overlay">覆盖物</string>
+    <string name="overlay_circle">覆盖物--圆</string>
+    <string name="overlay_line">覆盖物--线</string>
+    <string name="overlay_marker">覆盖物--标注</string>
+    <string name="overlay_marker_animation">覆盖物--动画标注</string>
+    <string name="overlay_text">覆盖物--文本</string>
+    <string name="overlay_polygen">覆盖物--多边形</string>
+    <string name="overlay_list">覆盖物--列表形式添加</string>
+</resources>

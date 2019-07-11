@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Text_name="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--<cn.xiayiye.custormtext.YhshView
+        android:id="@+id/yhshView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        Text_name:yhsh_size="20sp"
+        Text_name:yhsh_text="扬宏豕慧自定义属性" />-->
+
+    <cn.xiayiye.custormtext.xyyView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        Text_name:yhsh_color="#005500" />
+
+    <cn.xiayiye.custormtext.WatcherBoard
+        android:id="@+id/shi_zhong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
