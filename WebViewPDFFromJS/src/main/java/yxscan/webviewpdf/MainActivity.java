@@ -16,7 +16,8 @@ public class MainActivity extends Activity {
     private WebView pdfShowWebView;
     // docPath =
     // "http://192.168.40.160:9988/xxjrweb/order/viewPdf.json?filepath=/2017/04/20/2016睢宁特色小镇第1期信新直融计划产品说明书_1492654457390.pdf";
-    private String docPath = "http://zx.xytxw.com.cn/enterPDF/20180629/3ba04816-7f2c-4495-af87-482eda57030d1530240436378.pdf";
+//    private String docPath = "http://zx.xytxw.com.cn/enterPDF/20180629/3ba04816-7f2c-4495-af87-482eda57030d1530240436378.pdf";
+    private String docPath = "https://dl.google.com/dl/developers/android/pie/Android-9-Pie-Handbook.pdf?hl=zh-cn";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
