@@ -15,8 +15,8 @@ public class MainActivity extends Activity {
 
     private WebView pdfShowWebView;
 //    private String docPath = "http://zx.xytxw.com.cn/enterPDF/20180629/3ba04816-7f2c-4495-af87-482eda57030d1530240436378.pdf";
-    private String docPath = "https://dl.google.com/dl/developers/android/pie/Android-9-Pie-Handbook.pdf?hl=zh-cn";
-
+//    private String docPath = "https://dl.google.com/dl/developers/android/pie/Android-9-Pie-Handbook.pdf?hl=zh-cn";
+      private String docPath = "http://dev.10086.cn/resource/Android_5.6.6.1.pdf";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
